@@ -17,3 +17,9 @@ class Sword(Weapons):
 class Bow(Weapons):
     def attack():
         print("The player fires their bow!")
+
+
+class Staff(Weapons):
+    def attack():
+        print("The player casts a fireball with their staff!")
+
