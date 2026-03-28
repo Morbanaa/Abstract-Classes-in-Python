@@ -14,7 +14,8 @@ def main():
         print("Choose:")
         print("(1) Swing Sword:")
         print("(2) Shoot Bow:")
-        print("(3) Shoot Firebal:l")
+        print("(3) Shoot Firebal:")
+        print("(4) End Program:")
         choice = input("Choose: ")
 
         match(choice):
@@ -24,6 +25,9 @@ def main():
                 bow.attack()
             case "3":
                 staff.attack()
+            case "4":
+                clear_screen()
+                break
             case _:
                 clear_screen()
                 continue
@@ -43,3 +47,6 @@ def clear_screen():
 # Program Entry Point
 if __name__ == "__main__":
     main()
+
+    # Final Message
+    print("Thanks for playing!\n")
